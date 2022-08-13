@@ -1,0 +1,157 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* VARIABLES CSS */
+:root {
+    /* COLORS */
+    --darkest-green: #081c15;
+    --dark-green: #1b4332;
+    --green: #52b788;
+    --light-green: #95d5b2;
+    --lightest-green: #d8f3dc;
+    --white: #fff;
+
+    /* FONT AND TYPOGRAPHY */
+    --body-font: 'Poppins', sans-serif;
+    --fz-xxs: .625rem;
+    --fz-xs: .75rem;
+    --fz-sm: .813rem;
+    --fz-md: .938rem;
+    --fz-lg: 1rem;
+    --fz-xl: 1.25rem;
+    --fz-xxl: 1.5rem;
+    --fz-special: 1.75rem;
+
+    /* FONT WEIGHT */
+    --font-medium: 500;
+    --font-semibold: 600;
+
+    /* Z-INDEX */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+
+    --border-radius: .5rem;
+    --header-height: 3.5rem;
+    --transition: all 0.25s;
+}
+
+/* BASE */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body,
+button,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--fz-md);
+}
+body {
+    background-color: var(--darkest-green);
+    color: var(--light-green);
+    transition: .4s; /* FOR LIGHT THEME */ 
+}
+h1, h2, h3 {
+    color: var(--lightest-green);
+    font-weight: var(--font-semibold);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* BASE */
+
+/* PSEUDO CLASSES */
+::selection {
+    background-color: rgba(45, 106, 79, .5);
+    color: var(--white);
+}
+::before {
+    box-sizing: inherit;
+}
+::after {
+    box-sizing: inherit;
+}
+/* PSEUDO CLASSES */
+
+
+.container {
+    padding: 20vh 0 20vh;
+    max-height: 100vh;
+
+    display: grid;
+
+
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.isotipo__r4cz--container {
+    width: 6rem;
+    fill: var(--white);
+    justify-self: center;
+    /*
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    */
+}
+.isotipo__r4cz:hover {
+    fill: var(--green);
+    transition: var(--transition);
+}
+
+.bad__news {
+    justify-self: center;
+    text-align: center;
+    max-width: 540px;
+}
+.bad__news h1 {
+    font-size: var(--fz-special);
+    color: var(--lightest-green);
+    font-weight: var(--font-semibold);
+}
+.bad__news p {
+    font-family: var(--body-font);
+    font-size: var(--fz-md);
+    margin-top: 50px;
+}
+.bad__news a {
+    text-decoration: none;
+    cursor: pointer;
+
+    margin-top: 50px;
+    padding: .75rem 1rem;;
+
+    font-size: var(--fz-md);
+
+    display: inline-block;
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: var(--border-radius);
+    
+    transition: var(--transition);
+}
+.bad__news a:hover {
+    background-color: var(--green);
+    color: var(--darkest-green);
+}
